@@ -1,4 +1,7 @@
-# Raspberry Camera Automation
+Getting Started
+---------------
+
+### Introduction
 
 This repository provides scripts and configurations for controlling a USB camera attached to a Raspberry Pi device.
 It includes:
@@ -6,27 +9,27 @@ It includes:
 * Automated control of the camera using `motion` and `Node-RED` for the automation workflows and UI. 
 * Shell scripts responsible to start/stop the camera capture and also fetch stats of the Raspberry PI device via SSH/
 
-## Requirements
+### Requirements
 
-### Hardware
+#### Hardware
 
-* [Raspberry Pi](https://www.raspberrypi.com/products/) - 3 or later is recommended)
-* External USB Camera ([Logitech](https://www.logitech.com/en-us/shop/c/webcams) is a good choice but it is not limited 
+* [Raspberry Pi](https://www.raspberrypi.com/products/) - 3 or later is recommended.
+* External USB Camera ([Logitech](https://www.logitech.com/en-us/shop/c/webcams) is a good choice, but it is not limited.
 to).
 
-### Software
+#### Software
 * Any [Linux distribution](https://www.raspberrypi.com/software/) compatible with Raspberry PI.
 * [motion](https://motion-project.github.io/motion_download.html) package installed.   
 * [python3](https://www.python.org/) installed in the Raspberry PI.
 * [Node-RED](https://nodered.org/docs/getting-started/) installed in the Raspberry PI or in any other machine (It can be
 a VM).
 * Node-RED widgets/nodes: [node-red-contrib-cron](https://flows.nodered.org/node/node-red-contrib-cron) and 
-[node-red-contrib-ssh-v3](https://flows.nodered.org/node/node-red-contrib-ssh-v3). To install them, go to mange pallete 
+[node-red-contrib-ssh-v3](https://flows.nodered.org/node/node-red-contrib-ssh-v3). To install them, go to manage palette 
 in Node-RED editor, click in the install tab, type the widget name and then click in the install button. Please refer to
 Node-RED documentation.
 * **SSH Access:** Ability to SSH into the Raspberry Pi from the machine running Node-RED.
 
-## Installation
+### Installation
 
 1.  **Clone the repository:**
 
@@ -34,7 +37,7 @@ Node-RED documentation.
     git clone https://github.com/fvilarinho/raspberry-camera.git
     cd raspberry-camera
     ```
-
+    
 2.  **Install/Access Node-RED:**
 
     ```bash
@@ -86,14 +89,26 @@ Node-RED documentation.
 ### Screenshots
 
 ![screenshot1](screenshot1.png)
-Node-RED autmation workflow
+Node-RED automation workflow
 
 ![screenshot1](screenshot2.png)
 Node-RED automation UI
 
-##  Considerations
+### Considerations
 
 *   **Error Handling:**  Improve error handling in Node-RED workflows and shell scripts.
 *   **Configuration File:**  Use a configuration files in Node-RED workflows and shell scripts to make everything easier to 
 maintain.
 *   **Secure SSH Authentication:**  Use SSH keys for secure authentication.
+*   It's not a good practice to commit any sensitive data in the repository so... **DON'T EXPOSE OR COMMIT ANY SENSITIVE
+DATA IN THE PROJECT.**
+
+### Contact
+**Website:** - https://vilanet.sh
+
+**e-Mail:**
+- fvilarinho@gmail.com
+- fvilarinho@outlook.com
+- me@vila.net.br
+
+and that's all! Have fun!
