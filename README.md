@@ -17,12 +17,14 @@ to).
 ### Software
 * Any [Linux distribution](https://www.raspberrypi.com/software/) compatible with Raspberry PI.
 * [motion](https://motion-project.github.io/motion_download.html) package installed.   
+* [python3](https://www.python.org/) installed in the Raspberry PI.
 * [Node-RED](https://nodered.org/docs/getting-started/) installed in the Raspberry PI or in any other machine (It can be
 a VM).
+* Node-RED widgets/nodes: [node-red-contrib-cron](https://flows.nodered.org/node/node-red-contrib-cron) and 
+[node-red-contrib-ssh-v3](https://flows.nodered.org/node/node-red-contrib-ssh-v3). To install them, go to mange pallete 
+in Node-RED editor, click in the install tab, type the widget name and then click in the install button. Please refer to
+Node-RED documentation.
 * **SSH Access:** Ability to SSH into the Raspberry Pi from the machine running Node-RED.
-* **Understanding of Node-RED:** Basic familiarity with Node-RED for configuration.
-* **Shell Scripting Knowledge:** Familiarity with shell scripting for understanding and potentially modifying the 
-automation scripts.
 
 ## Installation
 
@@ -75,16 +77,23 @@ automation scripts.
         * `stream_localhost`: Must be set to off to enable remote access.
 
 
-6.  **Import Node-RED Flow:**
+6.  **Import Node-RED workflow:**
     - Import the file `flows.json` it into your Node-RED instance using the import function in the editor. Modify it as 
     you wish.
     - Edit the global environment variables `camera_hostname` (specify a hostname or the IP of the Raspberry PI device) 
     and `camera_home_dir` in Node-RED to point to the right location of the scripts.
 
+### Screenshots
+
+![screenshot1](screenshot1.png)
+Node-RED autmation workflow
+
+![screenshot1](screenshot2.png)
+Node-RED automation UI
 
 ##  Considerations
 
-*   **Error Handling:**  Improve error handling in Node-RED flows and shell scripts.
-*   **Configuration File:**  Use a configuration files in Node-RED flows and shell scripts to make everything easier to 
+*   **Error Handling:**  Improve error handling in Node-RED workflows and shell scripts.
+*   **Configuration File:**  Use a configuration files in Node-RED workflows and shell scripts to make everything easier to 
 maintain.
 *   **Secure SSH Authentication:**  Use SSH keys for secure authentication.

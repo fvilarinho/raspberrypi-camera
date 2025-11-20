@@ -179,12 +179,12 @@
     "env": [
       {
         "name": "camera_hostname",
-        "value": "<host>",
+        "value": "cameras.vila.net.br",
         "type": "str"
       },
       {
         "name": "camera_home_dir",
-        "value": "<home-dir>",
+        "value": "/home/fvilarinho",
         "type": "str"
       }
     ],
@@ -827,7 +827,7 @@
     "type": "debug",
     "z": "4ad394f877cfa1b5",
     "name": "debug",
-    "active": true,
+    "active": false,
     "tosidebar": true,
     "console": false,
     "tostatus": false,
@@ -949,7 +949,7 @@
     "type": "debug",
     "z": "53fed4e662138454",
     "name": "debug",
-    "active": true,
+    "active": false,
     "tosidebar": true,
     "console": false,
     "tostatus": false,
