@@ -3,8 +3,7 @@ Getting Started
 
 ### Introduction
 
-This repository provides scripts and configurations for controlling an USB camera attached to a Raspberry Pi device.
-It includes:
+This project provides a way to stream and control a USB camera attached to a Raspberry Pi device. It includes: 
 
 * Automated control of the camera using `motion` and `Node-RED` for the automation workflows and UI. 
 * Shell scripts responsible to start/stop the camera capture and also fetch stats of the Raspberry PI device via SSH/
