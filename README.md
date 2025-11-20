@@ -90,8 +90,12 @@ Node-RED documentation.
 ![screenshot1](screenshot1.png)
 Node-RED automation workflow
 
-![screenshot1](screenshot2.png)
-Node-RED automation UI
+![screenshot2](screenshot2.png)
+Node-RED automation UI. Toggle the switches to turon on/off the cameras then click in the View Port link to view the 
+camera streaming or...
+
+![screenshot3](screenshot3.png)
+Access the url http://<ip-raspberrpi-device>:8080
 
 ### Considerations
 
