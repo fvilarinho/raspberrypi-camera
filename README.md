@@ -22,8 +22,12 @@ to).
 * [python3](https://www.python.org/) installed in the Raspberry PI.
 * [Node-RED](https://nodered.org/docs/getting-started/) installed in the Raspberry PI or in any other machine (It can be
 a VM).
-* Node-RED widgets/nodes: [node-red-contrib-cron](https://flows.nodered.org/node/node-red-contrib-cron) and 
-[node-red-contrib-ssh-v3](https://flows.nodered.org/node/node-red-contrib-ssh-v3). To install them, go to manage palette 
+* Node-RED widgets/nodes: [node-red-contrib-cron](https://flows.nodered.org/node/node-red-contrib-cron), 
+[node-red-contrib-ssh-v3](https://flows.nodered.org/node/node-red-contrib-ssh-v3), 
+[node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) and 
+[node-red-contrib-virtual-smart-home](https://flows.nodered.org/node/node-red-contrib-virtual-smart-home). The last one
+is required if you wish to integrate the workflow in your Alexa.
+* To install them, go to manage palette 
 in Node-RED editor, click in the install tab, type the widget name and then click in the install button. Please refer to
 Node-RED documentation.
 * **SSH Access:** Ability to SSH into the Raspberry Pi from the machine running Node-RED.
